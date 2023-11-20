@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "208016094043",
+    "project_id": "lateral-origin-405515",
+    "storage_bucket": "lateral-origin-405515.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:208016094043:android:bb52d490c74acbc06da07e",
+        "android_client_info": {
+          "package_name": "com.cdp.mymap"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0Al43TStQCTynq4Kgg_TjlC82sikal08"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:208016094043:android:a6899574a04324b66da07e",
+        "android_client_info": {
+          "package_name": "com.example.myaparcialito"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0Al43TStQCTynq4Kgg_TjlC82sikal08"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
