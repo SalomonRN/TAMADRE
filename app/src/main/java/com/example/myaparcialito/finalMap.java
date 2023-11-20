@@ -46,14 +46,17 @@ public class finalMap extends AppCompatActivity implements OnMapReadyCallback, G
         START_LATITUDE = getIntent().getDoubleExtra("START_LATITUDE", 0.0);
         END_LONGITUDE = getIntent().getDoubleExtra("END_LONGITUDE", 0.0);
         END_LATITUDE = getIntent().getDoubleExtra("END_LATITUDE", 0.0);
-
+        System.out.println("NOMBREEEEEEEEEEEEEEEEEEEEEEEEEEEE FINALLLLLLLLLLLLMAPPPPPPPPPPPPPPPP");
+        System.out.println(getIntent().getStringExtra("NOMBRE_USER"));;
         user = findViewById(R.id.txt_User);
         metros = findViewById(R.id.distance);
+
+        user.setText("Querida usuario " + getIntent().getStringExtra("NOMBRE_USER"));
         SupportMapFragment mapFragment =
                 (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
-        String valor = getIntent().getStringExtra("usuario");
+
 
     }
 
@@ -92,7 +95,6 @@ public class finalMap extends AppCompatActivity implements OnMapReadyCallback, G
         Location.distanceBetween(start.latitude, start.longitude, end.latitude, end.longitude, distanceResults);
         int distanceInMeters = (int) distanceResults[0];
         //
-        user.setText("Querida usuaria " + getIntent().getStringExtra("usuario"));
         metros.setText("Distancia del viaje: " + distanceInMeters);
 
 

@@ -33,21 +33,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.201" />
 
-    <EditText
-        android:id="@+id/password"
-        android:layout_width="255dp"
-        android:layout_height="49dp"
-        android:background="#D9C6FB"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.955"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.508" />
-
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
@@ -64,7 +49,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/emailSign"
         android:layout_width="280dp"
         android:layout_height="49dp"
         android:background="#D9C6FB"
@@ -95,34 +80,33 @@
         app:layout_constraintVertical_bias="0.418" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/Edad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="164dp"
         android:fontFamily="@font/poppins_semibold"
-        android:text="Fecha de Nacimiento"
+        android:text="Edad"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.025"
+        app:layout_constraintHorizontal_bias="0.108"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:layout_constraintVertical_bias="0.454" />
+        app:layout_constraintVertical_bias="0.318" />
 
     <EditText
-        android:id="@+id/date"
-        android:layout_width="150dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="32dp"
+        android:id="@+id/age"
+        android:layout_width="230dp"
+        android:layout_height="53dp"
         android:background="#D9C6FB"
         android:ems="10"
-        android:inputType="date"
+        android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintHorizontal_bias="0.685"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password"
-        app:layout_constraintVertical_bias="0.032" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.647" />
 
     <EditText
         android:id="@+id/name"
@@ -138,6 +122,22 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.31" />
 
+    <EditText
+        android:id="@+id/contra"
+        android:layout_width="238dp"
+        android:layout_height="54dp"
+        android:background="#D9C6FB"
+        android:ems="10"
+        android:fontFamily="@font/poppins_semibold"
+        android:inputType="text"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.716"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.519" />
+
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
@@ -152,8 +152,9 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.288" />
 
+
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_register"
         android:layout_width="217dp"
         android:layout_height="50dp"
         android:fontFamily="@font/poppins_semibold"
@@ -165,5 +166,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.787" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -41,14 +41,15 @@ public class destino extends AppCompatActivity
     private GoogleMap googleMap;
     private Bundle extras = new Bundle();
 
-
+    String UserName;
 
 
 
     protected void onCreate(Bundle savedInstanceState) {
+        System.out.println("NOMBREEEEEEEEEEEEEEEEEEEEEEEEEEEE DESTINO");
+        System.out.println(getIntent().getStringExtra("NOMBRE_USER"));
         super.onCreate(savedInstanceState);
         setContentView(R.layout.destino);
-
         btn_conducor = findViewById(R.id.btn_conductores);
         btn_conducor.setOnClickListener(view -> {
             next();
@@ -123,7 +124,10 @@ public class destino extends AppCompatActivity
         map.setOnMyLocationClickListener(this);
     }
     public void next(){
+
+
         Intent intent = new Intent(this, conductoras.class);
+        extras.putString("NOMBRE_USER", getIntent().getStringExtra("NOMBRE_USER"));
         intent.putExtras(extras);
         startActivity(intent);
 
