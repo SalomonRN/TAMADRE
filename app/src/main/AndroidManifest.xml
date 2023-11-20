@@ -46,6 +46,10 @@
             android:name=".conductoras"
             android:exported="true">
         </activity>
+        <activity
+            android:name=".eleccion"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>

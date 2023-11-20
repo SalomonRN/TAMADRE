@@ -2,10 +2,13 @@ package com.example.myaparcialito;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.location.Location;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -35,7 +38,7 @@ public class finalMap extends AppCompatActivity implements OnMapReadyCallback, G
     public  MarkerOptions fin;
     TextView user;
     TextView metros;
-
+    Button btn;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,12 +53,17 @@ public class finalMap extends AppCompatActivity implements OnMapReadyCallback, G
         System.out.println(getIntent().getStringExtra("NOMBRE_USER"));;
         user = findViewById(R.id.txt_User);
         metros = findViewById(R.id.distance);
+        btn = findViewById(R.id.btn_next_elec);
 
         user.setText("Querida usuario " + getIntent().getStringExtra("NOMBRE_USER"));
         SupportMapFragment mapFragment =
                 (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
+        btn.setOnClickListener(view -> {
+            Intent intent = new Intent(this, eleccion.class);
+            startActivity(intent);
+        });
 
 
     }

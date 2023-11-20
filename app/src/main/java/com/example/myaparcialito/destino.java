@@ -15,6 +15,7 @@ import androidx.core.app.ActivityCompat;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
@@ -84,6 +85,7 @@ public class destino extends AppCompatActivity
                         longitud = location.getLongitude();
                         // CREAR VARIABLES DE POSICION
                         LatLng actual = new LatLng(latitud, longitud);
+                        map.moveCamera(CameraUpdateFactory.newLatLngZoom(actual, 50));
                         LatLng finall = new LatLng(latitud +0.0000688, longitud + 0.000205);
                         // COLOCAR MARKER
                         addMarker(actual, "Inicio");
